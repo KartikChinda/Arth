@@ -10,4 +10,8 @@
     .nav-feature {
         @apply hover:text-yellow-600 duration-200 text-lg font-subtext-heebo
     }
+
+    .review-card {
+        @apply p-6 bg-elementyellow rounded-lg shadow-lg flex flex-col items-center hover:shadow-xl duration-300
+    }
 }
