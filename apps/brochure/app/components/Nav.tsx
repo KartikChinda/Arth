@@ -12,9 +12,14 @@ const Nav = () => {
 
   useClickOutside(popupRef, () => setIsOpen(false));
 
+  const handleNavLinkClicks = () => {
+    setIsOpen(false);
+    setmodalOpen(true);
+  };
+
   return (
     <div className="">
-      {modalOpen && <ComingSoonModal />}
+      {modalOpen && <ComingSoonModal setModalOpen={setmodalOpen} />}
       <header className="bg-navorange shadow-md p-2 relative">
         <div className="container mx-auto flex justify-between items-center">
           <div className="pl-10 flex gap-2 justify-center items-center">
@@ -42,9 +47,7 @@ const Nav = () => {
                 <li>
                   <Link
                     href="#"
-                    onClick={() => {
-                      setmodalOpen(true);
-                    }}
+                    onClick={handleNavLinkClicks}
                     className="nav-feature"
                   >
                     Expense Tracker
@@ -53,9 +56,7 @@ const Nav = () => {
                 <li>
                   <Link
                     href="#"
-                    onClick={() => {
-                      setmodalOpen(true);
-                    }}
+                    onClick={handleNavLinkClicks}
                     className="nav-feature"
                   >
                     Goal Setter
@@ -64,9 +65,7 @@ const Nav = () => {
                 <li>
                   <Link
                     href="#"
-                    onClick={() => {
-                      setmodalOpen(true);
-                    }}
+                    onClick={handleNavLinkClicks}
                     className="nav-feature"
                   >
                     Progress Map
