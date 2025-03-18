@@ -18,7 +18,7 @@ const DonateSection = () => {
           <h1 className="text-4xl lg:text-6xl font-semibold font-hero-heading tracking-wide">
             Together, let's empower the next generation
           </h1>
-          <p className="pt-14 font-subtext-heebo">
+          <p className="pt-14 font-subtext-heebo text-xl">
             Your support helps us bring <strong>financial literacy</strong> to
             more students. <br />
             Every contribution empowers young minds with the knowledge they need
