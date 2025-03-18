@@ -8,7 +8,10 @@ const DonateSection = () => {
   const modalRef = useRef(null);
   useClickOutside(modalRef, () => setopenModal(false));
   return (
-    <section id="donate" className="flex justify-center items-center h-screen ">
+    <section
+      id="donate"
+      className="flex justify-center items-center h-screen mt-20"
+    >
       {openModal && <ComingSoonModal setModalOpen={setopenModal} />}
       <div
         className="relative  h-[100vh] bg-contain bg-center bg-no-repeat  flex items-center justify-center text-black"
@@ -18,7 +21,7 @@ const DonateSection = () => {
           <h1 className="text-4xl lg:text-6xl font-semibold font-hero-heading tracking-wide">
             Together, let's empower the next generation
           </h1>
-          <p className="pt-14 font-subtext-heebo text-xl">
+          <p className="pt-14 font-subtext-heebo text-xl text-justify lg:text-center">
             Your support helps us bring <strong>financial literacy</strong> to
             more students. <br />
             Every contribution empowers young minds with the knowledge they need
