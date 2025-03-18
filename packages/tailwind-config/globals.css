@@ -6,6 +6,24 @@
 @tailwind components; 
 @tailwind utilities; 
 
+html {
+    scroll-behavior: smooth;
+  }
+
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .rotating-button {
+    animation: spin 4s linear infinite;
+  }
+
+
 @layer utilities {
     .nav-feature {
         @apply hover:text-yellow-600 duration-200 text-lg font-subtext-heebo
