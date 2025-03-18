@@ -39,7 +39,7 @@ const DonateSection = () => {
             onClick={() => setopenModal(true)}
             className="relative top-24 rotating-button bg-[#FFF7D1] text-black font-subtext-heebo px-6 py-6 w-32 h-32 rounded-full font-bold hover:animate-none hover:text-xl duration-300 hover:bg-black hover:text-[#FFF7D1] "
           >
-            Donate Now.
+            Donate Now
           </button>
         </div>
       </div>
